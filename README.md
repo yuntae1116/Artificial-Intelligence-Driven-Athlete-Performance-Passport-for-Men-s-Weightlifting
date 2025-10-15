@@ -1,7 +1,5 @@
 # AI-Driven Athlete Performance Passport (Weightlifting) – Code & Data
 
-**Version:** v0.1.0  
-**Date:** 2025-10-15
 
 This repository contains Python modules converted from the original Jupyter notebooks and a _synthetic_ dataset derived from a private raw file. The code implements a typical pipeline for performance-based anti-doping analytics:
 - Preprocessing and feature engineering
@@ -17,7 +15,7 @@ This repository contains Python modules converted from the original Jupyter note
 ├── preprocess.py                 # Auto-converted from `npj_preprocess-Copy2.ipynb`
 ├── rnn_baseline.py               # Auto-converted from `npj_RNN-Copy2.ipynb`
 ├── xgboost_classification.py     # Auto-converted from `npj_xgboost_classification-Copy2.ipynb`
-├── lifting_npj_fake.csv          # Synthetic dataset generated from the private raw CSV
+├── lifting_sample.csv          # Synthetic dataset generated from the private raw CSV
 ├── requirements.txt              # Minimal dependencies to run the pipeline
 └── README.md
 ```
@@ -60,12 +58,6 @@ df = pd.read_csv('lifting_npj_fake.csv')
 print(df.head())
 PY
 ```
-
-## Versioning
-
-- v0.1.0: Initial release — notebooks converted to modules; synthetic dataset added; minimal dependencies.
-
-## Notes
 
 - If you need to reproduce the exact figures/tables for a manuscript, point your scripts to the real private dataset instead of the synthetic CSV.  
 - Please verify GPU availability before enabling any GPU-specific training (e.g., XGBoost `tree_method='gpu_hist'`).
