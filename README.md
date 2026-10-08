@@ -12,13 +12,13 @@ pip install -r requirements_APP.txt
 ## Run
 
 ```bash
-python APP_revision_workflow.py --sample_lifting.CSV --out results
+python APP_revision_workflow.py --lifting_sample.CSV --out results
 ```
 
 Audit input and athlete linkage without training:
 
 ```bash
-python APP_revision_workflow.py --raw lifting_npj_raw.CSV --out results --audit-only
+python APP_revision_workflow.py --lifting_sample.CSV --out results --audit-only
 ```
 
 Run software tests with synthetic data:
@@ -30,7 +30,7 @@ python APP_revision_workflow.py --self-test --out software_test
 For a quick pipeline check (not manuscript estimates):
 
 ```bash
-python APP_revision_workflow.py --raw lifting_npj_raw.CSV --out smoke_results --smoke
+python APP_revision_workflow.py --lifting_sample.CSV --out smoke_results --smoke
 ```
 
 ## Scope
