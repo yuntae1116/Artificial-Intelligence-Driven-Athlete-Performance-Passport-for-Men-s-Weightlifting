@@ -1,6 +1,6 @@
 # Athlete Performance Passport — Scientific Reports analysis
 
-Python implementation adapted from `APP_revision_workflow(3).ipynb`.
+Python implementation adapted from `AI-driven_APP_workflow.ipynb`.
 
 ## Install
 Python 3.11 is recommended.
@@ -12,7 +12,7 @@ pip install -r requirements_APP.txt
 ## Run
 
 ```bash
-python APP_revision_workflow.py --raw lifting_npj_raw.CSV --out results
+python APP_revision_workflow.py --sample_lifting.CSV --out results
 ```
 
 Audit input and athlete linkage without training:
